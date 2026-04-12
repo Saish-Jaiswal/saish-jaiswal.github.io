@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="[YOUR_NAME] — Academic Personal Website" />
+  <title>[YOUR_NAME] | [YOUR_TITLE]</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =====================
+       NAVBAR
+       ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#about" class="nav-logo">[YOUR_NAME]</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#research"     class="nav-link">Research</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#projects"     class="nav-link">Projects</a></li>
+        <li><a href="#experience"   class="nav-link">Experience</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- =====================
+         ABOUT SECTION
+         ===================== -->
+    <section id="about" class="section section-about">
+      <div class="about-container">
+
+        <div class="about-photo">
+          <!--
+            Add your photo at assets/profile.jpg
+            If the image is missing, initials are shown automatically.
+          -->
+          <img
+            src="assets/profile.jpg"
+            alt="[YOUR_NAME]"
+            class="profile-img"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+          />
+          <div class="profile-placeholder" style="display:none;">[YOUR_INITIALS]</div>
+        </div>
+
+        <div class="about-content">
+          <h1 class="about-name">[YOUR_NAME]</h1>
+          <p class="about-position">[YOUR_POSITION] &middot; [YOUR_UNIVERSITY_OR_INSTITUTION]</p>
+
+          <div class="about-bio">
+            <p>
+              [YOUR_BIO — Write 2&ndash;3 sentences about yourself, your research focus, and your
+              current role. Example: I am a PhD student in Computer Science at XYZ University,
+              advised by Prof. ABC. My research focuses on machine learning and natural language
+              processing, with a particular interest in reasoning under uncertainty.]
+            </p>
+          </div>
+
+          <div class="about-links">
+            <a href="mailto:[YOUR_EMAIL]" class="btn btn-primary">Email</a>
+            <a href="assets/cv.pdf" class="btn btn-outline" target="_blank" rel="noopener">CV</a>
+            <a
+              href="https://scholar.google.com/citations?user=[YOUR_SCHOLAR_ID]"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener"
+            >Google Scholar</a>
+            <a
+              href="https://github.com/[YOUR_GITHUB]"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener"
+            >GitHub</a>
+            <a
+              href="https://linkedin.com/in/[YOUR_LINKEDIN]"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener"
+            >LinkedIn</a>
+            <a
+              href="https://twitter.com/[YOUR_TWITTER]"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener"
+            >Twitter&nbsp;/&nbsp;X</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================
+         RESEARCH SECTION
+         ===================== -->
+    <section id="research" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+        <p class="section-subtitle">
+          [ADD_RESEARCH_OVERVIEW — Describe your broad research vision in 2&ndash;3 sentences.
+          What problems do you care about? What impact do you hope to have?]
+        </p>
+
+        <div class="research-interests">
+          <h3>Research Interests</h3>
+          <ul class="interest-list">
+            <li>[RESEARCH_INTEREST_1 &mdash; e.g., Natural Language Processing]</li>
+            <li>[RESEARCH_INTEREST_2 &mdash; e.g., Machine Learning]</li>
+            <li>[RESEARCH_INTEREST_3 &mdash; e.g., Knowledge Representation &amp; Reasoning]</li>
+            <li>[RESEARCH_INTEREST_4 &mdash; e.g., Human&ndash;AI Interaction]</li>
+            <li>[RESEARCH_INTEREST_5 &mdash; e.g., Trustworthy AI]</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         PUBLICATIONS SECTION
+         ===================== -->
+    <section id="publications" class="section">
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+        <p class="section-note">* denotes equal contribution</p>
+
+        <!--
+          ADD_PUBLICATIONS_HERE
+          ─────────────────────
+          Copy and paste the <div class="pub-entry"> block below for each new paper.
+          Available badge types:
+            class="pub-badge"             → Conference (blue)
+            class="pub-badge pub-badge-journal"   → Journal (green)
+            class="pub-badge pub-badge-preprint"  → Preprint (yellow)
+            class="pub-badge pub-badge-workshop"  → Workshop (purple)
+        -->
+
+        <!-- Publication 1 -->
+        <div class="pub-entry">
+          <div class="pub-badge">Conference</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              [PAPER_TITLE_1 &mdash; Full title of your paper goes here]
+            </h3>
+            <p class="pub-authors">
+              <strong>[YOUR_NAME]</strong>, [CO_AUTHOR_1], [CO_AUTHOR_2]
+            </p>
+            <p class="pub-venue">
+              [VENUE_NAME &mdash; e.g., Annual Conference on Neural Information Processing
+              Systems (NeurIPS)], [YEAR]
+            </p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">[Paper]</a>
+              <a href="#" class="pub-link">[Code]</a>
+              <a href="#" class="pub-link">[Slides]</a>
+              <a href="#" class="pub-link">[Poster]</a>
+            </div>
+            <p class="pub-tldr">
+              <strong>TL;DR:</strong> [ONE_SENTENCE_SUMMARY of what this paper does / finds.]
+            </p>
+          </div>
+        </div>
+
+        <!-- Publication 2 -->
+        <div class="pub-entry">
+          <div class="pub-badge pub-badge-journal">Journal</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              [PAPER_TITLE_2 &mdash; Full title of your paper goes here]
+            </h3>
+            <p class="pub-authors">
+              [CO_AUTHOR_1], <strong>[YOUR_NAME]</strong>, [CO_AUTHOR_2]
+            </p>
+            <p class="pub-venue">
+              [JOURNAL_NAME &mdash; e.g., Transactions on Machine Learning Research (TMLR)], [YEAR]
+            </p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">[Paper]</a>
+              <a href="#" class="pub-link">[Code]</a>
+            </div>
+            <p class="pub-tldr">
+              <strong>TL;DR:</strong> [ONE_SENTENCE_SUMMARY]
+            </p>
+          </div>
+        </div>
+
+        <!-- Publication 3 -->
+        <div class="pub-entry">
+          <div class="pub-badge pub-badge-preprint">Preprint</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              [PAPER_TITLE_3 &mdash; Full title of your paper goes here]
+            </h3>
+            <p class="pub-authors">
+              <strong>[YOUR_NAME]</strong>, [CO_AUTHOR_1]
+            </p>
+            <p class="pub-venue">arXiv, [YEAR]</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">[arXiv]</a>
+              <a href="#" class="pub-link">[Code]</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publication 4 — Workshop -->
+        <div class="pub-entry">
+          <div class="pub-badge pub-badge-workshop">Workshop</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              [PAPER_TITLE_4 &mdash; Full title of your paper goes here]
+            </h3>
+            <p class="pub-authors">
+              <strong>[YOUR_NAME]</strong>, [CO_AUTHOR_1], [CO_AUTHOR_2]
+            </p>
+            <p class="pub-venue">
+              [WORKSHOP_NAME] @ [CONFERENCE_NAME], [YEAR]
+            </p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">[Paper]</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================
+         PROJECTS SECTION
+         ===================== -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">
+          [ADD_PROJECTS_OVERVIEW &mdash; Optional: a brief intro to your side projects,
+          course projects, or open-source contributions.]
+        </p>
+
+        <!--
+          ADD_PROJECTS_HERE
+          ─────────────────
+          Copy and paste a <div class="project-card"> block for each new project.
+        -->
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">[PROJECT_NAME_1]</h3>
+              <div class="project-links">
+                <a
+                  href="https://github.com/[YOUR_GITHUB]/[REPO_NAME]"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                >GitHub</a>
+                <a href="#" class="project-link">Demo</a>
+              </div>
+            </div>
+            <p class="project-desc">
+              [PROJECT_DESCRIPTION_1 &mdash; 2&ndash;3 sentences. What does this project do?
+              What motivated it? What were the key results or highlights?]
+            </p>
+            <div class="project-tags">
+              <span class="tag">[TECH_1]</span>
+              <span class="tag">[TECH_2]</span>
+              <span class="tag">[TECH_3]</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">[PROJECT_NAME_2]</h3>
+              <div class="project-links">
+                <a
+                  href="https://github.com/[YOUR_GITHUB]/[REPO_NAME]"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                >GitHub</a>
+              </div>
+            </div>
+            <p class="project-desc">[PROJECT_DESCRIPTION_2]</p>
+            <div class="project-tags">
+              <span class="tag">[TECH_1]</span>
+              <span class="tag">[TECH_2]</span>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">[PROJECT_NAME_3]</h3>
+              <div class="project-links">
+                <a
+                  href="https://github.com/[YOUR_GITHUB]/[REPO_NAME]"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                >GitHub</a>
+              </div>
+            </div>
+            <p class="project-desc">[PROJECT_DESCRIPTION_3]</p>
+            <div class="project-tags">
+              <span class="tag">[TECH_1]</span>
+              <span class="tag">[TECH_2]</span>
+              <span class="tag">[TECH_3]</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         EXPERIENCE SECTION
+         ===================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <!--
+          ADD_EXPERIENCE_HERE
+          ───────────────────
+          Copy and paste a <div class="timeline-item"> block for each new entry.
+          Use this for internships, jobs, teaching, AND education.
+        -->
+        <div class="timeline">
+
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">[ROLE_1 &mdash; e.g., Research Intern]</h3>
+                <span class="timeline-date">[START_DATE] &ndash; [END_DATE]</span>
+              </div>
+              <p class="timeline-org">
+                [ORGANIZATION_1 &mdash; e.g., Google DeepMind &middot; London, UK]
+              </p>
+              <ul class="timeline-details">
+                <li>[KEY_DETAIL_1 &mdash; Describe a key responsibility or achievement.]</li>
+                <li>[KEY_DETAIL_2 &mdash; Describe another key responsibility or achievement.]</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">[ROLE_2 &mdash; e.g., Teaching Assistant]</h3>
+                <span class="timeline-date">[START_DATE] &ndash; [END_DATE]</span>
+              </div>
+              <p class="timeline-org">
+                [ORGANIZATION_2 &mdash; e.g., Department of Computer Science, XYZ University]
+              </p>
+              <ul class="timeline-details">
+                <li>[KEY_DETAIL_1]</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education 1 — PhD -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">
+                  [DEGREE_1 &mdash; e.g., Ph.D. in Computer Science]
+                </h3>
+                <span class="timeline-date">[START_YEAR] &ndash; Present</span>
+              </div>
+              <p class="timeline-org">[UNIVERSITY_NAME_1]</p>
+              <ul class="timeline-details">
+                <li>Advisor: <a href="#">Prof. [ADVISOR_NAME]</a></li>
+                <li>Thesis: [THESIS_TOPIC]</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education 2 — Undergrad -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">
+                  [DEGREE_2 &mdash; e.g., B.Tech. in Computer Science &amp; Engineering]
+                </h3>
+                <span class="timeline-date">[START_YEAR] &ndash; [END_YEAR]</span>
+              </div>
+              <p class="timeline-org">[UNIVERSITY_NAME_2]</p>
+              <ul class="timeline-details">
+                <li>GPA: [YOUR_GPA] / [MAX_GPA]</li>
+                <li>[HONOURS_OR_AWARDS &mdash; e.g., Institute Silver Medal]</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+         CONTACT SECTION
+         ===================== -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-intro">
+          [ADD_CONTACT_MESSAGE &mdash; e.g., I am always happy to discuss research ideas,
+          collaborations, or just chat. Feel free to reach out via any of the channels below!]
+        </p>
+
+        <div class="contact-grid">
+
+          <a href="mailto:[YOUR_EMAIL]" class="contact-card">
+            <div class="contact-icon">&#9993;</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">[YOUR_EMAIL]</div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/[YOUR_GITHUB]"
+            class="contact-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="contact-icon">GH</div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">@[YOUR_GITHUB]</div>
+            </div>
+          </a>
+
+          <a
+            href="https://twitter.com/[YOUR_TWITTER]"
+            class="contact-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="contact-icon">&#120143;</div>
+            <div>
+              <div class="contact-label">Twitter&nbsp;/&nbsp;X</div>
+              <div class="contact-value">@[YOUR_TWITTER]</div>
+            </div>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/[YOUR_LINKEDIN]"
+            class="contact-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="contact-icon">in</div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">[YOUR_NAME]</div>
+            </div>
+          </a>
+
+          <a
+            href="https://scholar.google.com/citations?user=[YOUR_SCHOLAR_ID]"
+            class="contact-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="contact-icon">GS</div>
+            <div>
+              <div class="contact-label">Google Scholar</div>
+              <div class="contact-value">[YOUR_NAME]</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================
+       FOOTER
+       ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> [YOUR_NAME]
+        &nbsp;&middot;&nbsp;
+        Hosted on
+        <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
